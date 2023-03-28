@@ -13,13 +13,6 @@ for (let i = 0; i < 8; i++) {
   }
 }
 
-const isInArray = (arr, target) => {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i][0] === target[0] && arr[i][1] === target[1]) return true;
-  }
-  return false;
-};
-
 const findNeighbors = (square) => {
   let neighbors = [];
   const moves = [[-2, 1], [-1, 2], [1, 2], [2, 1], [2, -1], [1, -2], [-1, -2], [-2, -1]];
